@@ -10,7 +10,7 @@ import { onAuthStateChanged } from 'firebase/auth';
 import { auth } from './firebase';
 
 function App() {
-  const [user,setUser]=useState();
+  
   const navigate=useNavigate();
 
   useEffect(()=>{
@@ -27,7 +27,7 @@ function App() {
 
   return (
     <>
-      <Navbar />
+      <Navbar  />
       <Routes>
 
         <Route path='/' element={ <Home /> } />
